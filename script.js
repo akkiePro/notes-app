@@ -35,7 +35,7 @@ for (let i = 0; i < sessionStorage.length; i++) {
     }
 }
 
-let count = sessionStorage.length == 0 ? sessionStorage.length : sessionStorage.length-1;
+let count = sessionStorage.length == 0 ? 0 : sessionStorage.length;
 // submit
 btnSubmit.onclick = () => {
     if (input.value != "") {
