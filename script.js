@@ -14,7 +14,7 @@ for (let i = 0; i < sessionStorage.length; i++) {
     
         const td_notes = document.createElement("td");
         td_notes.setAttribute("id", "td_notes"+i);
-        td_notes.innerHTML = sessionStorage.getItem(element);
+        td_notes.innerHTML = sessionStorage.getItem(decodeURIComponent(element));
         
         const td_rmv = document.createElement("td");
         td_rmv.setAttribute("id", "td_rmv"+i);
